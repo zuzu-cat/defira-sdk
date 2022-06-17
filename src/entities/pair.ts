@@ -8,9 +8,9 @@ import { FACTORY_ADDRESS, INIT_CODE_HASH, MINIMUM_LIQUIDITY, FIVE, _997, _1000, 
 import { InsufficientReservesError, InsufficientInputAmountError } from '../errors'
 
 export const computePairAddress = ({
-  factoryAddress,
   tokenA,
   tokenB,
+  factoryAddress,
   initHashCode
 }: {
   factoryAddress: string
@@ -38,7 +38,7 @@ export class Pair {
     factoryAddress = FACTORY_ADDRESS,
     initHashCode = INIT_CODE_HASH
   ): string {
-    return computePairAddress({ factoryAddress, tokenA, tokenB, initHashCode })
+    return computePairAddress({ tokenA, tokenB, factoryAddress, initHashCode })
   }
 
   public constructor(

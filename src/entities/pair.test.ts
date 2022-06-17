@@ -5,7 +5,7 @@ import { computePairAddress, Pair } from './pair'
 import { INIT_CODE_HASH, FACTORY_ADDRESS } from '../constants'
 
 describe('computePairAddress', () => {
-  it('should correctly compute the pool address', () => {
+  it('should correctly compute the pool address for mainnet', () => {
     const CHAIN_ID = 1666600000
     const WONE = new Token(CHAIN_ID, '0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a', 18, 'WONE', 'Wrapped ONE')
     const ETH = new Token(CHAIN_ID, '0x6983D1E6DEf3690C4d616b13597A09e6193EA013', 18, '1ETH', 'ETH')
@@ -17,6 +17,21 @@ describe('computePairAddress', () => {
     })
 
     expect(result).toEqual('0xBc132b3A5A345069846c5e6f49FE28FeC01E7c47')
+  })
+  it('should correctly compute the pool address for testnet', () => {
+    const CHAIN_ID = 1666700000
+    const WONE = new Token(CHAIN_ID, '0x7466d7d0C21Fa05F32F5a0Fa27e12bdC06348Ce2', 18, 'WONE', 'Wrapped ONE')
+    const ETH = new Token(CHAIN_ID, '0x1E120B3b4aF96e7F394ECAF84375b1C661830013', 18, '1ETH', 'ETH')
+    const factoryAddressTestnet = '0x0b0E0cBF19bcaB886175ceFfC7c6d190Aa60C25e'
+    const initCodeHashTestnet = '0x7224a10f5f94e12d3973f5ef0f63a558539a93e1eef47935934ffc4d741b4b9f'
+    const result = computePairAddress({
+      factoryAddress: factoryAddressTestnet,
+      initHashCode: initCodeHashTestnet,
+      tokenA: WONE,
+      tokenB: ETH
+    })
+
+    expect(result).toEqual('0x762C4e966716eE835441e4309B40ddEb951C002A')
   })
   it('should give same result regardless of token order', () => {
     const CHAIN_ID = 1666600000
