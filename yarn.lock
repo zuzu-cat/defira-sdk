@@ -2634,6 +2634,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@uniswap/v2-core@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@uniswap/v2-core@npm:1.0.1"
+  checksum: eaa118fe45eac2e80b7468547ce2cde12bd3c8157555d2e40e0462a788c9506c6295247b511382da85e44a89ad92aff7bb3433b23bfbd2eeea23942ecd46e979
+  languageName: node
+  linkType: hard
+
 "@zuzu-cat/defira-sdk-core@https://github.com/zuzu-cat/defira-sdk-core.git":
   version: 3.0.1
   resolution: "@zuzu-cat/defira-sdk-core@https://github.com/zuzu-cat/defira-sdk-core.git#commit=b54f0377175ee6c018f061723f15d2da8c2cc01b"
@@ -2659,6 +2666,7 @@ __metadata:
     "@types/big.js": ^4.0.5
     "@types/jest": ^24.0.25
     "@uniswap/sdk-core": ^3.0.0-alpha.3
+    "@uniswap/v2-core": ^1.0.1
     "@zuzu-cat/defira-sdk-core": "https://github.com/zuzu-cat/defira-sdk-core.git"
     rimraf: ^3.0.2
     tiny-invariant: ^1.1.0
