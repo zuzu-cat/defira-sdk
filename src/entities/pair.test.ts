@@ -1,5 +1,5 @@
 import { Token, Price, CurrencyAmount } from '@uniswap/sdk-core'
-import { WONE as WONE5 } from '@zuzu-cat/defira-sdk-core'
+import { WONE as WONE5 } from './wone5'
 import { InsufficientInputAmountError } from '../errors'
 import { computePairAddress, Pair } from './pair'
 import { INIT_CODE_HASH, FACTORY_ADDRESS } from '../constants'

@@ -1,9 +1,8 @@
 import JSBI from 'jsbi'
-import { Pair, Route, Trade } from './entities'
+import { Pair, Route, Trade, WONE as WONE5, ONE as _ONE } from './entities'
 import { Router } from './router'
 import invariant from 'tiny-invariant'
 import { CurrencyAmount, Percent, Token } from '@uniswap/sdk-core'
-import { WONE as WONE5, ONE as _ONE } from '@zuzu-cat/defira-sdk-core'
 
 function checkDeadline(deadline: string[] | string): void {
   expect(typeof deadline).toBe('string')

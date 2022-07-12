@@ -1,8 +1,7 @@
 import JSBI from 'jsbi'
 import invariant from 'tiny-invariant'
 import { TradeType, Token, CurrencyAmount } from '@uniswap/sdk-core'
-import { WONE as _WONE5 } from '@zuzu-cat/defira-sdk-core'
-import { Pair, Route, Trade } from '../index'
+import { Pair, Route, Trade, WONE as _WONE5 } from '../index'
 
 const ADDRESSES = [
   '0x0000000000000000000000000000000000000001',

@@ -1,6 +1,5 @@
 import { Token, CurrencyAmount } from '@uniswap/sdk-core'
-import { ONE as _ONE, WONE as WONE9 } from '@zuzu-cat/defira-sdk-core'
-import { Pair, Route } from './index'
+import { Pair, Route, ONE as _ONE, WONE as WONE9 } from './index'
 
 describe('Route', () => {
   const CHAIN_ID = 1666600000

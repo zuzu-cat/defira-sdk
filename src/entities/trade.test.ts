@@ -3,7 +3,8 @@ import { Route } from './route'
 import { Trade } from './trade'
 import JSBI from 'jsbi'
 import { CurrencyAmount, Percent, Token, TradeType, Price } from '@uniswap/sdk-core'
-import { ONE as _ONE, WONE as WONE5 } from '@zuzu-cat/defira-sdk-core'
+import { ONE as _ONE } from './one'
+import { WONE as WONE5 } from './wone5'
 
 describe('Trade', () => {
   const CHAIN_ID = 1666600000
