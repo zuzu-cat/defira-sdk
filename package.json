@@ -1,8 +1,8 @@
 {
   "name": "@zuzu-cat/defira-sdk",
   "license": "MIT",
-  "version": "3.0.1",
-  "description": "🛠 An SDK for building applications on top of Uniswap V2",
+  "version": "1.0.0",
+  "description": "🛠 An SDK for building applications on top o the Defira Uniswap DEX",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
